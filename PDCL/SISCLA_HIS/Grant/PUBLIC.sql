@@ -1,0 +1,1 @@
+GRANT DELETE,INSERT,SELECT,UPDATE ON plan_table TO public;

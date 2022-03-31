@@ -1,0 +1,23 @@
+PROMPT CREATE OR REPLACE VIEW v_tipos_transaccion
+CREATE OR REPLACE VIEW v_tipos_transaccion (
+  codigo_transaccion,
+  descripcion,
+  codigo_producto_v,
+  mayor_riesgo,
+  naturaleza,
+  producto
+) AS
+SELECT
+CODIGO_TRANSACCION,
+DESCRIPCION,
+CODIGO_PRODUCTO_V,
+MAYOR_RIESGO,
+NATURALEZA,
+NOMBRE_LARGO PRODUCTO
+FROM
+TIPOS_TRANSACCION TT,
+LISTA_VALORES P
+WHERE TT.CODIGO_PRODUCTO_V = P.CODIGO AND
+P.TIPO_DATO = '2'
+/
+

@@ -1,0 +1,12 @@
+PROMPT ALTER TABLE reporte ADD PRIMARY KEY
+ALTER TABLE reporte
+  ADD PRIMARY KEY (
+    id
+  )
+  USING INDEX
+    INITRANS   8
+    STORAGE (
+      INITIAL     144 K
+    )
+/
+

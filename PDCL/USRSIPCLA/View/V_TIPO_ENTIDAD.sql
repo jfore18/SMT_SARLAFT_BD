@@ -1,0 +1,10 @@
+PROMPT CREATE OR REPLACE VIEW v_tipo_entidad
+CREATE OR REPLACE VIEW v_tipo_entidad (
+  codigo,
+  nombre_largo
+) AS
+SELECT CODIGO, NOMBRE_LARGO FROM LISTA_VALORES
+WHERE
+TIPO_DATO = 24
+/
+
